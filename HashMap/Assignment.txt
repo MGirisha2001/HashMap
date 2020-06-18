@@ -1,0 +1,26 @@
+package com.company;
+import java.util.HashMap;
+import java.util.Map;
+
+class map{
+    public static void main(String[] args) {
+
+
+        String str = "if it is to be it is up me to delegate";
+        HashMap<String, Integer> obj = new HashMap<String, Integer>();
+
+        String st[] = str.split("\\s+");
+        for (String s : st) {
+            int count = 0;
+            if (obj.containsKey(s)) {
+                count = obj.get(s);
+            }
+            obj.put(s, count + 1);
+        }
+
+        // output
+       for (String keys : obj.keySet()) {
+            System.out.printf("%s : %d%n", keys, obj.get(keys));
+        }
+    }
+}
