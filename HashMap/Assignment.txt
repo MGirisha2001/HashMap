@@ -1,16 +1,14 @@
 package com.company;
 import java.util.HashMap;
-import java.util.Map;
 
 class Map{
     public static void main(String[] args) {
 
 
-        String str = "if it is to be it is up me to delegate";
+        String str[] = {"if","it","is","to","be","it","is","up","me","to","delegate"};
         HashMap<String, Integer> obj = new HashMap<String, Integer>();
 
-        String st[] = str.split("\\s+");
-        for (String s : st) {
+        for (String s : str) {
             int count = 0;
             if (obj.containsKey(s)) {
                 count = obj.get(s);
