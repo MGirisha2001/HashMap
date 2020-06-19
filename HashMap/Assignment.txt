@@ -6,19 +6,19 @@ class Map{
 
 
         String str[] = {"if","it","is","to","be","it","is","up","me","to","delegate"};
-        HashMap<String, Integer> obj = new HashMap<String, Integer>();
+        HashMap<String, Integer> hmap = new HashMap<String, Integer>();
 
         for (String s : str) {
             int count = 0;
-            if (obj.containsKey(s)) {
-                count = obj.get(s);
+            if (hmap.containsKey(s)) {
+                count = hmap.get(s);
             }
-            obj.put(s, count + 1);
+            hmap.put(s, count + 1);
         }
 
         // output
-       for (String keys : obj.keySet()) {
-            System.out.printf("%s : %d%n", keys, obj.get(keys));
+       for (String keys : hmap.keySet()) {
+            System.out.printf("%s : %d%n", keys, hmap.get(keys));
         }
     }
 }
