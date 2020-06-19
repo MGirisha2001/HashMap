@@ -2,7 +2,7 @@ package com.company;
 import java.util.HashMap;
 import java.util.Map;
 
-class map{
+class Map{
     public static void main(String[] args) {
 
 
